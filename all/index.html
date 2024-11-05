@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JavaScript Exercises</title>
+  </head>
+  <body>
+    <h1 class="text-center">JavaScript Exercises</h1>
+    <div class="container d__grid-center">
+      <section class="container">
+        <div class="container--glass flow-content">
+          
+          <!-- Exercise 1: Magic Spell Caster -->
+          <div class="spell-container">
+            <h2>Exercise 1: Magic Spell Caster</h2>
+            <p id="spell-text">Expecto Patronum!</p>
+            <button class="btn btn__primary" onclick="castSpell()">Cast Spell</button>
+          </div>
+
+          <!-- Exercise 2: Fruit Collector Game -->
+          <div class="spell-container">
+            <h2>Exercise 2: Fruit Collector Game</h2>
+            <button class="btn btn__primary" onclick="collectFruits()">Collect Fruits</button>
+            <div class="fruit-container">
+              <ul id="fruitBasket" class="fruit-basket"></ul>
+            </div>
+          </div>
+          
+          <!-- Exercise 3: Magic Box Color Toggle -->
+          <div class="spell-container">
+            <h2>Exercise 3: Magic Box Color Toggle</h2>
+            <div class="box-container">
+              <div id="magicBox" class="box"></div>
+            </div>
+            <button class="btn btn__primary" onclick="toggleMagicBoxColor()">Enter</button>
+          </div>
+          
+
+          <!-- Exercise 4: Hero Identity Check -->
+          <div class="spell-container">
+            <h2>Exercise 4: Hero Identity Check</h2>
+            <form id="heroForm" onsubmit="validateHeroIdentity(event)">
+              <input type="text" class="form__input" id="heroName" placeholder="Hero Name" />
+              <input type="text" class="form__input" id="secretCode" placeholder="Secret Code" />
+              <input type="text" class="form__input" id="superpower" placeholder="Superpower" />
+              <button type="submit" class="btn btn__primary">Enter Secret Base</button>
+            </form>
+            <p id="heroMessage"></p>
+          </div>
+
+          <!-- Exercise 5: Galactic Crew Table -->
+          <div class="spell-container">
+            <h2>Exercise 5: Galactic Crew Table</h2>
+            <table id="crewTable" class="crew-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Species</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
